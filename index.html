@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    
+    <!-- Dark/Light Mode Toggle -->
+    <button id="toggle-mode">Toggle Dark/Light Mode</button>
+
+    <!-- City Input -->
+    <div class="search">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loader" class="hidden">Loading...</div>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error"></div>
+
+    <!-- Current Weather Display -->
+    <div id="weather-info" class="weather-card"></div>
+
+    <!-- 5-Day Forecast -->
+    <div id="forecast" class="forecast-container"></div>
+
+    <!-- Chart.js Container -->
+    <canvas id="temp-chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
